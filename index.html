@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Best Server</title>
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="css/main.css">
+        <!-- Google Font (Poppins) -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Main navigation bar start -->
+        <header class="nav-bar">
+            <div class="container">
+                <a href="#" class="logo">Remember<span>That</span></a>
+                <div id="menu-btn-open" class="hamberger-menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <nav>
+                    <div id="menu-btn-close" class="close-mobile-menu"></div>
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                    <ul class="secondary-nav">
+                        <li><a href="#">Contact</a></li>
+                        <li class="premium"><a href="#">Go Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Main navigation bar End -->
+
+        <!-- Hero Section Start -->
+        <section class="hero">
+            <div class="container">
+                <div class="desc">
+                    <h1>A Task App That Doesn't Stink</h1>
+                    <p>it's nity &amp; gritty</p>
+                    <button>Try for free</button>
+                    <a class="watch-video" href="#"><img src="images/watch.svg" alt="an icon of a camera"> Watch a video</a>
+                </div>
+                <div class="illustration">
+                    <img src="images/illustration.svg" alt="a task app illustration">
+                </div>
+            </div>
+        </section>
+        <!-- Hero Section End -->
+
+        <!-- Features Section Start -->
+        <section class="features">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Unlimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaboration</li>
+                    <li>Other awesome features</li>
+                    <li>Confetti Explosions upon Task Completions</li>
+                </ul>
+                
+                    <img class="person" src="images/holding-phone.jpg" alt="a person holding a phone">
+                
+            </div>
+        </section>
+        <!-- Features Section End -->
+
+        <!-- Testimonials Section Start -->
+        <section class="testimonials">
+            <div class="container">
+                <div class="box">
+                    <img src="images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam itaque maiores voluptatibus</blockquote>
+                    <cite>-Jane Doe</cite>
+                </div>
+                <div class="box">
+                    <img src="images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam itaque maiores voluptatibus</blockquote>
+                    <cite>-Jane Doe</cite>
+                </div>
+                <div class="box">
+                    <img src="images/person.jpg" alt="">
+                    <blockquote>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veniam itaque maiores voluptatibus</blockquote>
+                    <cite>-Jane Doe</cite>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonials Section End -->
+
+        <!-- Contact Section Start -->
+        <section class="contact">
+            <div class="container">
+                <form action="">
+                    <fieldset>
+                        <legend>Contact</legend>
+                        <label for="user-name">Name</label>
+                        <input type="text" name="userName" id="user-name" placeholder="Enter Your Name">
+                        <label for="msg">Message</label>
+                        <textarea name="message" id="msg" cols="30" rows="10"></textarea>
+                        <input type="sumbit" value="Send Message">
+                    </fieldset>
+                </form>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11050.261470957426!2d6.127334!3d46.179307!3m2!1i1024!2i768!4f13.1!4m3!3e0!4m0!4m0!5e0!3m2!1sfr!2sma!4v1657727590250!5m2!1sfr!2sma" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <!-- Contact Section End -->
+
+        <!-- JS code for opening and closing navigation menu on small screens -->
+        <!-- Start -->
+        <script>
+            const openMenu = document.getElementById("menu-btn-open");
+            const closeMenu = document.getElementById("menu-btn-close");
+            const navigation = document.querySelector("nav");
+
+            openMenu.addEventListener('click', ()=> {
+                if(navigation.classList.contains('show-navigation')){
+                    navigation.classList.remove('show-navigation');
+                } else {
+                    navigation.classList.add('show-navigation');
+                }
+            });
+            closeMenu.addEventListener('click',()=> {
+                navigation.classList.remove('show-navigation');
+            });
+
+        </script>
+    </body>
+</html>
